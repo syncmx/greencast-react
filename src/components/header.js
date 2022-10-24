@@ -4,7 +4,7 @@ import { logo, search } from "../images";
 const Header = () => {
   return (
     <header>
-      <div className="flex items-center justify-between mx-10">
+      <div className="flex items-center justify-between sm:mx-10">
         <div className="p-4 cursor-pointer">
           <img src={logo} className="w-40 lg:w-full" alt="logo" />
         </div>
@@ -19,16 +19,16 @@ const Header = () => {
               type="text"
               placeholder="Search"
             />
-            <img src={search} className="h-5 " alt="" />
+            <img src={search} className="h-3 pr-2 sm:h-5" alt="" />
           </div>
         </div>
       </div>
-      <nav className="h-[92px] w-full bg-[#313A47] flex space-x-4 items-center justify-around">
-        <p className="capitalize cursor-pointer text-xl lg:text-2xl text-white active:bg-[#2FE24B] active:text-[#313A47] p-8 ">home</p>
-        <p className="capitalize cursor-pointer text-xl lg:text-2xl text-white active:bg-[#2FE24B] active:text-[#313A47] p-8 ">about</p>
-        <p className="capitalize cursor-pointer text-xl lg:text-2xl text-white active:bg-[#2FE24B] active:text-[#313A47] p-8 ">gallery</p>
-        <p className="capitalize cursor-pointer text-xl lg:text-2xl text-white active:bg-[#2FE24B] active:text-[#313A47] p-8"> Blog</p>
-        <p className="capitalize cursor-pointer text-xl lg:text-2xl text-white active:bg-[#2FE24B] active:text-[#313A47] p-8 ">Contact</p>
+      <nav className="h-[92px] w-full bg-[#313A47] flex sm:space-x-4 items-center p-4 sm:justify-around sm:p-10">
+        <p className="capitalize c text-base cursor-pointer sm:text-xl lg:text-2xl text-white active:bg-[#2FE24B] active:text-[#313A47] px-3 sm:p-8 ">home</p>
+        <p className="capitalize cursor-pointer text-base sm:text-xl lg:text-2xl text-white active:bg-[#2FE24B] active:text-[#313A47] px-3 sm:p-8 ">about</p>
+        <p className="capitalize cursor-pointer text-base sm:text-xl lg:text-2xl text-white active:bg-[#2FE24B] active:text-[#313A47] px-3 sm:p-8 ">gallery</p>
+        <p className="capitalize cursor-pointer text-base sm:text-xl lg:text-2xl text-white active:bg-[#2FE24B] active:text-[#313A47] px-3 sm:p-8"> Blog</p>
+        <p className="capitalize cursor-pointer text-base sm:text-xl lg:text-2xl text-white active:bg-[#2FE24B] active:text-[#313A47] px-3 sm:p-8 ">Contact</p>
       </nav>
     </header>
   );

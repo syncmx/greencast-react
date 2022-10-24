@@ -2,7 +2,7 @@ import { Banner, Blog, Footer, Gallery, Header, Home, Info } from "./components"
 
 function App() {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <Header />
       <Banner />
       <Home />
